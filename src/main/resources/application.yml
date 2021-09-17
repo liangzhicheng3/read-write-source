@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    master: #主机
+      jdbc-url: jdbc:mysql://192.168.3.36:3306/member?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&serverTimezone=Hongkong
+      username: root
+      password: admin
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    slave1: #从机1
+      jdbc-url: jdbc:mysql://192.168.3.37:3306/member?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&serverTimezone=Hongkong
+      username: root #只读账号
+      password: admin
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    #从机2
+    #...
